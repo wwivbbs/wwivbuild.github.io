@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3HLHFB9GF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R3HLHFB9GF');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>WWIV Continuous Build Server</title>
+
+<!-- Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-WuViQmTamrPyvMFZjf8te7HpKtdxuzV/HX1yG26a0d8yieIBr+beDf1ME99iX1cM" crossorigin="anonymous">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+ <a class="navbar-brand" href="#">WWIV</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" 
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://www.wwivbbs.org">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://docs.wwivbbs.org/en/latest"">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/wwivbbs/wwiv/releases/">Downloads</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/wwivbbs/wwiv">GitHub</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/wwivbbs/wwiv/issues">Issue Tracker</a>
+      </li>
+    </ul>
+    <script>
+      function resetId(){
+        var q = document.getElementById("search_q");
+        var suffix="@example.com";
+        // just to check if @example.com is already present
+        var v = q.value
+        q.value = "repo:wwivbbs/wwiv " + v
+        // alert("Value before submit:" + q.value);
+      }      
+    </script>
+    <form class="form-inline my-2 my-lg-0" action="https://github.com/search" onsubmit="resetId();">
+      <input type="hidden" name="type" value="code">
+      <input class="form-control mr-sm-2" id="search_q" name="q" type="text" placeholder="Search" name="q">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="jumbotron">
+<br/>
+<div class="container-fluid"> <img src="http://www.wwivbbs.org/images/WWIV_logo.jpg" alt="" class="d-block mx-auto img-fluid" style="width: 75%">  </div>
+<div class="row">
+	<div class="col">
+    <h1 class="text-center">Continuous Build Server</h1>
+  </div>
+</div>
+<div class="row">
+	<div class="col text-center">
+    <a class="btn btn-primary btn-lg"
+    href="https://github.com/wwivbbs/wwiv/releases?q=prerelease%3Atrue+wwiv59_&expanded=true"
+    role="button">WWIV 5.9 Builds</a>
+    </div>
+</div>
+<hr>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © 2023, WWIV Software Services. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
